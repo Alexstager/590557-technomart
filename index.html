@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт, магазин строительных материалов и инструмента</title>
+		<link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans+Narrow" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main--header">
@@ -14,12 +17,14 @@
   	  <input type="search" placeholder="Поиск">
   	  <button class="search--header--button" type="submit">Поиск</button>
   	  </form>
-  	  <a class="header--bar--bookmarks" href="#">Закладки</a>
+  	  <a class="header--bar--bookmarks" href="#">
   	  <span class="header--bar--text">Закладки:&nbsp;</span>
   	  <span class="header--bar--text--counter">0</span>
-  		<a class="header--bar--cart" href="#">Корзина</a>
+  	  </a>
+  		<a class="header--bar--cart" href="#">
    	  <span class="header--bar--text">Корзина:&nbsp;</span>
-  	  <span class="header--bar--text--counter">0</span> 		
+  	  <span class="header--bar--text--counter">0</span> 	
+  	  </a>	
   		<a class="header--bar--order" href="#">Оформить заказ</a>
   	</div>
   	<div class="header--main--section">
@@ -384,5 +389,28 @@
     </div>
    </div>
 </footer>
+ <!-- popup feedback-->
+    <section class="modal modal-feedback">
+			<label>
+				Ваше имя:
+				<input type="name" placeholder="Представьтесь, пожалуйста">
+			</label>
+			<label>
+				Ваш e-mail:
+				<input type="email" placeholder="Для отправки ответа">
+			</label>
+			<label>
+				Текст письма:
+				<input type="text" placeholder="В свободной форме">
+			</label>
+      <span class="modal-close">x</span>
+    </section>
+ <!-- popup map-->
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <span class="modal-close">x</span>
+      <img src="img/map_full.png" alt="Карта проезда">
+    </section>
   </body>
+
 </html>
